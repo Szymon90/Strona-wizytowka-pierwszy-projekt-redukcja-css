@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --red: #D94350;
+    --grey: #A28F89;
+    --black: #1E2126;
+    --blue: #37BED2;
+    --yellow: #EDE1A5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) minmax(60vh, auto)
+}
+
+.wrapper h2 {
+    font-family: 'Fira Code', monospace;
+    color: var(--yellow);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* css do nav start */
+header {
+
+    display: grid;
+    grid-template-rows: 65px calc(100vh - 65px)
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: var(--red);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo div {
+    width: 40%;
+    height: 80%;
+    font-size: 25px;
+    margin-left: 3%;
+    background-color: var(--black);
+    color: var(--yellow);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logo div p {
+    margin: 0;
+    text-align: start;
+    line-height: 48px;
+    padding-left: 2%;
+}
+
+.logo div::after {
+    content: "";
+    position: absolute;
+    right: -7%;
+    top: 8%;
+    background: var(--red);
+    height: 118%;
+    width: 16%;
+    transform: rotate(30deg);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu div {
+    width: 20%;
+    height: 80%;
+    justify-items: baseline;
+    background-color: var(--black);
+    margin-right: 2%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menuButton {
+    transition: 0.5s;
+}
+
+.menuButton::after {
+    content: "";
+    position: absolute;
+    right: -7%;
+    top: -2%;
+    background: var(--blue);
+    height: 124%;
+    width: 17%;
+    transform: rotate(30deg);
+    transition: 0.5s;
+}
+
+.menuButton span {
+    display: block;
+    color: var(--blue);
+    text-align: center;
+    line-height: 52px;
+}
+
+.menuButton:hover {
+
+    background-color: var(--blue);
+}
+
+.menuButton span:hover {
+    color: var(--black);
+}
+
+.menuButton:hover::after {
+    display: none;
+}
+
+/*koniec css do nav*/
+
+/* start css do baner*/
+.baner {
+    background-image: url(/img/code-1076536_1280.jpg);
+    background-size: cover;
+}
+
+.quotation {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    transform: skew(-20deg);
+    left: 38%;
+    opacity: 90%;
+    animation: speedBaner 2s linear;
+}
+
+.quotation h2 {
+    display: block;
+    position: relative;
+    margin: 0;
+    width: 60%;
+    top: 8%;
+    left: 15%;
+    color: var(--blue);
+    transform: skew(20deg);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-around;
+    transform: skew(20deg);
+    position: absolute;
+    top: 79%;
+    left: 40%;
+    width: 40%;
+}
+
+#fbLogo {
+
+    color: var(--blue);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#istaLogo {
+    color: var(--blue);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#linkedinLogo {
+    color: var(--blue);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+@keyframes speedBaner {
+    0% {
+        left: -38%;
+        opacity: 100%;
+    }
+
+    100% {
+        left: 38%;
+        opacity: 90%;
+    }
+}
+
+/*koniec css do baner*/
+
+/*początek css do abaut me */
+
+.aboutMe {
+    background-color: var(--red);
+    position: relative;
+
+}
+
+.aboutMe h2 {
+    position: relative;
+    top: 13%;
+    left: 23%;
+    display: block;
+    width: 150px;
+}
+
+.basicIinformation {
+    position: absolute;
+    width: 35%;
+    height: 30%;
+    left: 40%;
+    top: 25%;
+    background: var(--blue);
+    border-radius: 20px;
+    animation: animeShort 8s linear both;
+}
+
+
+.shortAboutMe {
+
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    left: 40%;
+    top: 10%;
+    z-index: 1;
+    background: var(--black);
+    border-radius: 20px;
+}
+
+@keyframes animeShort {
+    0% {
+        left: 40%;
+        top: 25%;
+    }
+
+    100% {
+        left: 18%;
+    }
+}
+
+.basicIinformation div {
+    padding: 6%;
+    font-size: 150%;
+    color: var(--black);
+}
+
+.shortAboutMe div {
+    padding: 6%;
+    font-size: 150%;
+    color: var(--yellow);
+}
+
+/*koniec css do about me*/
+/*start css do my skills*/
+
+.mySkills {
+    background-color: var(--red);
+}
+
+.containerSkills {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containerSkills div {
+    background-color: black;
+    width: 380px;
+    height: 500px;
+}
+
+.containerSkills div h3 {
+    color: var(--yellow);
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.containerSkills div i {
+    color: var(--blue);
+    font-size: 346px;
+    padding: 0 4%;
+}
+
+.containerSkills div p {
+    color: var(--yellow);
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0;
+}
+
+#nodeLogo {
+    font-size: 286px;
+}
+
+.containerSkills div #frontLogo i {
+    font-size: 155px;
+    margin: 0 4%;
+}
+
+#frontLogo {
+    height: 69%;
+}
+
+#jslogo {
+    position: relative;
+    left: 23%;
+}
+
+
+.backEend {
+    margin-bottom: 90px;
+}
+
+/*konie css do my skylls*/
+/*początek css do portfolio*/
+.myPortfolio {
+    background-color: var(--red);
+}
+
+.myPortfolio h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.portfolioimg {
+    display: flex;
+    height: calc(100% - 60px);
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.projekt1 {
+    width: 60%;
+    height: 50%;
+    background-image: url(/img/security-265130_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.projekt2 {
+    width: 40%;
+    height: 50%;
+    background-image: url(/img/network-3357642_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.projekt3 {
+    width: 40%;
+    height: 50%;
+    background-image: url(/img/web-1012467_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.projekt4 {
+    width: 60%;
+    height: 50%;
+    background-image: url(/img/beverage-3157395_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolioimg div {
+    transition: 0.3s linear;
+}
+
+.portfolioimg div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*koniec css do portfolio*/
+/*start css do contact*/
+.contact {
+    display: flex;
+}
+
+.info {
+    width: 40%;
+
+    background-color: #1E2126;
+}
+
+.textInfo {
+    display: block;
+    width: 50%;
+    position: relative;
+    top: -19%;
+    left: 10%;
+}
+
+#envelope {
+    position: relative;
+    left: 69%;
+    top: 24%;
+    font-size: 90px;
+    color: #37BED2;
+}
+
+#arrow {
+    position: relative;
+    left: 49%;
+    top: 48%;
+    font-size: 85px;
+    font-size: 90px;
+    color: var(--yellow);
+}
+
+.textInfo p {
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.address {
+    position: relative;
+    top: 11%;
+    left: 8%;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.fromZone {
+    width: 60%;
+    background-color: var(--red);
+}
+
+.fromDiv {
+    position: relative;
+    left: 15%;
+    width: 350px;
+}
+
+input {
+    width: 90%;
+    height: 20px;
+    font-size: 16px;
+    background-color: #1E2126;
+    border: none;
+    color: #37BED2;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+label {
+    font-size: 20px;
+    color: #EDE1A5;
+    font-family: 'Fira Code', monospace;
+}
+
+#message {
+    width: 90%;
+    height: 70px;
+    background-color: #1E2126;
+    color: #37BED2;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+#sendBtn {
+    cursor: pointer;
+    margin-top: 5%;
+    background: #1E2126;
+    color: #EDE1A5;
+    border: none;
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 25px;
+    border-radius: 5px;
+    translate: 0.3s;
+}
+
+#sendBtn:hover {
+    background: #EDE1A5;
+    color: #1E2126;
+}
+
+.contact h2 {
+    color: #EDE1A5;
+    font-size: 25px;
+    font-family: 'Fira Code', monospace;
+}
+
+/* koniec css do contact*/

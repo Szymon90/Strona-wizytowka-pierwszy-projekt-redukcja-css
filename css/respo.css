@@ -1,0 +1,152 @@
+@media screen and (max-width: 1050px) {
+    .logo div p {
+        font-size: 24px;
+    }
+
+    .quotation h2 {
+        font-size: 28px;
+    }
+
+    .socialMedia {
+        top: 75%;
+    }
+
+    .shortAboutMe div {
+        font-size: 143%;
+    }
+
+    .basicIinformation div {
+        padding: 6%;
+        font-size: 115%;
+
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 750px;
+    }
+
+    .quotation h2 {
+        font-size: 21px;
+        text-align: left;
+        top: 16%;
+        left: 20%;
+    }
+
+    .socialMedia {
+        top: 66%;
+        left: 52%;
+    }
+
+    .shortAboutMe div {
+        font-size: 121%;
+    }
+
+    .basicIinformation div {
+        font-size: 84%;
+    }
+
+    .aboutMe h2 {
+        left: 20%
+    }
+
+    #arrow {
+        left: 45%;
+        top: 42%;
+        font-size: 60px;
+    }
+
+    #envelope {
+        font-size: 75px;
+    }
+
+    .textInfo p {
+        font-size: 18px;
+
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .menu {
+        width: 450px;
+    }
+
+    .quotation h2 {
+        font-size: 15px;
+    }
+
+
+    #fbLogo {
+        font-size: 28px;
+    }
+
+    #istaLogo {
+        font-size: 28px;
+    }
+
+    #linkedinLogo {
+        font-size: 28px;
+    }
+
+    .shortAboutMe div {
+        font-size: 93%;
+    }
+
+    .basicIinformation div {
+        font-size: 57%;
+    }
+
+    .fromDiv {
+        width: 219px;
+    }
+
+    .textInfo p {
+        font-size: 14px;
+    }
+
+    .address {
+        font-size: 15px;
+    }
+
+    #envelope {
+        position: relative;
+        left: 8%;
+        top: 39%;
+    }
+
+    #arrow {
+        left: 21%;
+        font-size: 43px;
+        top: 37%;
+    }
+
+    .aboutMe h2 {
+        left: 4%;
+    }
+
+    .quotation {
+        left: 19%;
+    }
+
+    .socialMedia {
+        top: 50%;
+        left: 47%;
+    }
+
+    .quotation {
+        position: relative;
+        width: 53%;
+    }
+
+    .menuButton::after {
+        content: none;
+    }
+}

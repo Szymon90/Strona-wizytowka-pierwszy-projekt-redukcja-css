@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/respo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+    <title>Moja Wizytówka</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <div>
+                        <p>{Web for you}</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menuButton"><span>About Me</span></div>
+                    <div class="menuButton"><span>My Skills</span></div>
+                    <div class="menuButton"><span>My Portfolio</span></div>
+                    <div class="menuButton"><span>Contact</span></div>
+                </div>
+            </nav>
+            <div class="baner">
+                <div class="quotation">
+                    <h2>
+                        "Zawsze pisz kod tak, jakby gość, który ma się nim zajmować był agresywnym psychopatą, który
+                        wie, gdzie mieszkasz.”cyt. <br>
+                        <span> Martin Golding</span>
+                    </h2>
+                    <div class="socialMedia">
+                        <i class="fab fa-facebook-square" id="fbLogo"></i>
+                        <i class="fab fa-instagram" id="istaLogo"></i>
+                        <i class="fab fa-linkedin" id="linkedinLogo"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="aboutMe">
+            <h2>About Me</h2>
+            <div class="basicIinformation">
+                <div>
+                    Full Name: <span class="colorFrombassic">Designer</span> </br>
+                    Age: <span class="colorFrombassic">28 Years</span> <br>
+                    Profile: <span class="colorFrombassic">Fullstack</span> <br>
+                    Telephone: <span class="colorFrombassic">456 435 343</span> <br>
+                    E-mail: <span class="colorFrombassic">yebforyou@ax.pl</span>
+                </div>
+            </div>
+            <div class="shortAboutMe">
+                <div>
+                    <span> Loremdivum dolor sit, amet consectetur adipisicing elit. Corrupti, sed!
+                        Perspiciatis, repellendus. Magni, ut ex numquam reiciendis voluptatibus suscipit excepturi, ab
+                        odit
+                        illum vero eius in sunt, esse eaque libero. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Optio consectetur, similique deserunt fugiat laboriosam suscipit eos incidunt! Quo, porro?
+                        Adipisci
+                        vitae voluptatibus quas blanditiis? Voluptates in eius ea facere sapiente.Quo, porro? Adipisci
+                        vitae voluptatibus quas blanditiis? Voluptates in eius ea facere sapiente. </span>
+                </div>
+            </div>
+
+
+            <div></div>
+
+
+        </section>
+        <section class="mySkills">
+            <h2>My Skills</h2>
+            <div class="containerSkills">
+                <div class="ui">
+                    <h3>UX/UI</h3>
+                    <i class="fas fa-object-group" id="DesignLogo"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="front">
+                    <h3>Front End</h3>
+                    <div id="frontLogo">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square" id="jslogo"></i>
+                    </div>
+                    <p>HTML 5, CSS 3, JavaScript</p>
+                </div>
+                <div class="backEend">
+                    <h3>Back End</h3>
+                    <i class="fab fa-node" id="nodeLogo"></i>
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </section>
+        <section class="myPortfolio">
+            <h2>My Portfolio</h2>
+            <div class="portfolioimg">
+                <div class="projekt1"></div>
+                <div class="projekt2"></div>
+                <div class="projekt3"></div>
+                <div class="projekt4"></div>
+            </div>
+        </section>
+        <section class="contact">
+
+            <div class="info">
+                <i class="fas fa-envelope" id="envelope"></i>
+                <i class="fas fa-arrow-circle-right" id="arrow"></i>
+                <span class="textInfo">
+                    <p> Please describe your question Send me message and i will answer you as soon as possible!</p>
+                </span>
+                <span class="address">
+                    <p>Web master <br>
+                        Poland, Gdańsk <br>
+                        ul. Nie ma takiej 12/4 00-000 <br>
+                        456 435 343 <br>
+                        yebforyou@ax.pl
+                    </p>
+                </span>
+            </div>
+            <div class="fromZone">
+                <div class="fromDiv">
+                    <h2>Contact</h2>
+
+                    <form method="post" id="contact_form">
+                        <div><label for="name">Name</label></div>
+                        <div><input type="text" name="name" id="name" /></div>
+                        <div><label for="phone">Numer telefonu</label></div>
+                        <div><input type="text" name="phone" id="phone" /></div>
+                        <div><label for="email">Adres email</label></div>
+                        <div><input type="text" name="email" id="email" /></div>
+                        <div><label for="message">Treść wiadomości</label></div>
+                        <div><textarea name="message" id="message"></textarea></div>
+                        <div><button id="sendBtn">Wyślij</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </section>
+    </div>
+</body>
+
+</html>
