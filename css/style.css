@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-rows: minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) minmax(60vh, auto)
+    grid-template-rows: minmax(660px, auto) minmax(660px, auto) minmax(660px, auto) minmax(660px, auto) minmax(420px, auto)
 }
 
 .wrapper h2 {
@@ -25,7 +25,7 @@ body {
 header {
 
     display: grid;
-    grid-template-rows: 65px calc(100vh - 65px)
+    grid-template-rows: 65px calc(660px - 65px)
 }
 
 nav {
@@ -126,7 +126,7 @@ nav {
 
 /* start css do baner*/
 .baner {
-    background-image: url(img/code-1076536_1280.jpg);
+    background-image: url("code-1076536_1280.jpg");
     background-size: cover;
 }
 
@@ -345,7 +345,7 @@ nav {
 .projekt1 {
     width: 60%;
     height: 50%;
-    background-image: url(img/security-265130_1920.jpg);
+    background-image: url(security-265130_1920.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -353,7 +353,7 @@ nav {
 .projekt2 {
     width: 40%;
     height: 50%;
-    background-image: url(/img/network-3357642_1280.jpg);
+    background-image: url(network-3357642_1280.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -361,7 +361,7 @@ nav {
 .projekt3 {
     width: 40%;
     height: 50%;
-    background-image: url(img/web-1012467_1280.jpg);
+    background-image: url(web-1012467_1280.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -369,7 +369,7 @@ nav {
 .projekt4 {
     width: 60%;
     height: 50%;
-    background-image: url(img/beverage-3157395_1280.jpg);
+    background-image: url(beverage-3157395_1280.jpg);
     background-position: center;
     background-size: cover;
 }

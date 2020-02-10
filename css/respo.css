@@ -8,17 +8,20 @@
     }
 
     .socialMedia {
-        top: 75%;
+        top: 78%;
     }
 
     .shortAboutMe div {
-        font-size: 143%;
+        font-size: 133%;
     }
 
     .basicIinformation div {
         padding: 6%;
         font-size: 115%;
+    }
 
+    .arrow {
+        left: 46%;
     }
 
 }
@@ -40,13 +43,25 @@
         left: 20%;
     }
 
+    #fbLogo {
+        font-size: 40px;
+    }
+
+    #istaLogo {
+        font-size: 40px;
+    }
+
+    #linkedinLogo {
+        font-size: 40px;
+    }
+
     .socialMedia {
-        top: 66%;
-        left: 52%;
+        top: 70%;
+        left: 50%;
     }
 
     .shortAboutMe div {
-        font-size: 121%;
+        font-size: 115%;
     }
 
     .basicIinformation div {
@@ -54,7 +69,7 @@
     }
 
     .aboutMe h2 {
-        left: 20%
+        left: 18%
     }
 
     #arrow {
@@ -83,6 +98,10 @@
         font-size: 15px;
     }
 
+    .socialMedia {
+        top: 56%;
+        left: 47%;
+    }
 
     #fbLogo {
         font-size: 28px;
@@ -97,11 +116,11 @@
     }
 
     .shortAboutMe div {
-        font-size: 93%;
+        font-size: 88%;
     }
 
     .basicIinformation div {
-        font-size: 57%;
+        font-size: 50%;
     }
 
     .fromDiv {
