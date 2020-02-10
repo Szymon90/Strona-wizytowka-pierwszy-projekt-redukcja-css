@@ -126,7 +126,7 @@ nav {
 
 /* start css do baner*/
 .baner {
-    background-image: url(/img/code-1076536_1280.jpg);
+    background-image: url(img/code-1076536_1280.jpg);
     background-size: cover;
 }
 
@@ -345,7 +345,7 @@ nav {
 .projekt1 {
     width: 60%;
     height: 50%;
-    background-image: url(/img/security-265130_1920.jpg);
+    background-image: url(img/security-265130_1920.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -361,7 +361,7 @@ nav {
 .projekt3 {
     width: 40%;
     height: 50%;
-    background-image: url(/img/web-1012467_1280.jpg);
+    background-image: url(img/web-1012467_1280.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -369,7 +369,7 @@ nav {
 .projekt4 {
     width: 60%;
     height: 50%;
-    background-image: url(/img/beverage-3157395_1280.jpg);
+    background-image: url(img/beverage-3157395_1280.jpg);
     background-position: center;
     background-size: cover;
 }
